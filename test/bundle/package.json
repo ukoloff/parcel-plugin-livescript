@@ -1,0 +1,12 @@
+{
+  "name": "test.bundle",
+  "private": true,
+  "version": "1.0.0",
+  "description": "parcel-plugin-livescript",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-livescript": "file:../.."
+  }
+}

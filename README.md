@@ -1,11 +1,13 @@
 # parcel-plugin-livescript
 
+[![Build Status](https://travis-ci.org/ukoloff/parcel-plugin-livescript.svg?branch=master)](https://travis-ci.org/ukoloff/parcel-plugin-livescript)
+
 LiveScript support for Parcel bundler
 
 ## Links
 
-- [parcel][]
-- [livescript][]
+- [Parcel][]
+- [LiveScript][]
 
-[parcel]: https://parceljs.org/
-[livescript]: http://livescript.net/
+[Parcel]: https://parceljs.org/
+[LiveScript]: http://livescript.net/

@@ -6,10 +6,25 @@
 
 LiveScript support for Parcel bundler
 
+## Usage
+
+- `npm i -D parcel-plugin-livescript`
+    + or better `pnpm i -D parcel-plugin-livescript`
+- Start using `.ls`-files
+
+## Configuration
+
+Just like Parcel itself,
+this plugin just works
+(or just fails in some cases).
+There are no configuration parameters
+except Pull Requests :wink:
 ## Links
 
 - [Parcel][]
 - [LiveScript][]
+- [pnpm]
 
 [Parcel]: https://parceljs.org/
 [LiveScript]: http://livescript.net/
+[pnpm]: https://pnpm.js.org/

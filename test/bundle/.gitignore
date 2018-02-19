@@ -1,6 +1,2 @@
 # Ignore everything
 *
-
-!.gitignore
-!*.ls
-!package.json

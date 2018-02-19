@@ -1,2 +1,3 @@
-module.exports = ->
-  it * 7
+do ->
+  @live-script-seven-up = ->
+    it * 7

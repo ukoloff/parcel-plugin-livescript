@@ -13,18 +13,26 @@
   "keywords": [
     "livescript",
     "javascript",
-    ""
+    "transpiler"
+  ],
+  "files": [
+    "*.js"
   ],
   "engines": {
     "node": ">=4"
   },
-  "author": "Stas Ukolov <ukoloff@gmail.com>",
+  "author": {
+    "name": "Stas Ukolov",
+    "email": "ukoloff@gmail.com",
+    "url": "https://github.com/ukoloff"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ukoloff/parcel-plugin-livescript/issues"
   },
   "homepage": "https://github.com/ukoloff/parcel-plugin-livescript",
   "dependencies": {
-    "livescript": "^1.5.0"
+    "livescript": "^1.5.0",
+    "parcel-bundler": "^1.6.1"
   }
 }

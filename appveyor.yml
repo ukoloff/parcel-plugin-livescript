@@ -1,0 +1,36 @@
+version: 1.0.{build}-{branch}
+
+cache:
+  - node_modules
+
+environment:
+  matrix:
+    - NOV: 10
+    - NOV: 9
+    - NOV: 8
+    - NOV: 7
+
+platform:
+  - x64
+  - x86
+
+install:
+  - ps: Install-Product node $env:NOV $env:PLATFORM
+  - npm install
+
+build: off
+
+before_test:
+  - node -v
+  - npm -v
+
+test_script:
+  - npm test
+
+after_test:
+  - npm pack
+
+artifacts:
+  - path: "*.tgz"
+    name: NPM package
+

@@ -10,3 +10,6 @@ cache:
 
 env:
   with: out
+
+before_script:
+  - (cd test/bundle && npm install --loglevel=error)

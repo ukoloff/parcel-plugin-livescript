@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-livescript",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "LiveScript support for Parcel bundler",
   "main": "index.js",
   "scripts": {

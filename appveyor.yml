@@ -16,7 +16,7 @@ platform:
 install:
   - ps: Install-Product node $env:NOV $env:PLATFORM
   - npm install
-  - cmd /c "cd test/bundle && npm install"
+  - cmd /c "cd test/bundle && npm install --loglevel=error"
 
 build: off
 

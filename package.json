@@ -19,7 +19,7 @@
     "*.js"
   ],
   "engines": {
-    "node": ">=7"
+    "node": ">=8"
   },
   "author": {
     "name": "Stas Ukolov",

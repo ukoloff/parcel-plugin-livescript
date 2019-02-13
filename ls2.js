@@ -5,8 +5,8 @@ const { compile } = require('livescript');
 const { Asset } = require('parcel-bundler');
 
 class LiveScriptAsset extends Asset {
-  constructor(name, pkg, options) {
-    super(name, pkg, options);
+  constructor(name, options) {
+    super(name, options);
     this.type = 'js';
   }
 
@@ -14,7 +14,7 @@ class LiveScriptAsset extends Asset {
     let lsOptions = {
       bare: true,
       filename: this.relativeName,
-      map: this.options.sourceMaps && 'debug'
+      map: this.options.sourceMaps
     };
 
     let transpiled = compile(this.contents, lsOptions);

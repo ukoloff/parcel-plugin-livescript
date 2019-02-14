@@ -23,7 +23,7 @@ except Pull Requests :wink:
 
 ## Credits
 
-First version is created by [https://github.com/ukoloff](Stas Ukolov).
+First version is created by [Stas Ukolov](https://github.com/ukoloff).
 
 ## Links
 

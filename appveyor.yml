@@ -5,9 +5,10 @@ cache:
 
 environment:
   matrix:
+    - NOV: 11
+    - NOV: 10
     - NOV: 9
     - NOV: 8
-    - NOV: 7
 
 platform:
   - x64
@@ -33,4 +34,3 @@ after_test:
 artifacts:
   - path: "*.tgz"
     name: NPM package
-

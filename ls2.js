@@ -1,22 +1,41 @@
 //
 // ls2.js - Transpile LiveScript to JavaScript
 //
-const livescript = require('livescript')
-const JSAsset = require('parcel-bundler/src/assets/JSAsset')
+const { compile } = require('livescript');
+const { Asset } = require('parcel-bundler');
 
-module.exports = class LiveScriptAsset extends JSAsset {
-  parse(code) {
-    let transpiled = livescript.compile(code, {
+class LiveScriptAsset extends Asset {
+  constructor(name, options) {
+    super(name, options);
+    this.type = 'js';
+  }
+
+  async generate() {
+    let lsOptions = {
       bare: true,
       filename: this.relativeName,
-      map: this.options.sourceMaps && 'debug'
-    })
+      map: this.options.sourceMaps
+    };
+
+    let transpiled = compile(this.contents, lsOptions);
+    let sourceMap = undefined;
     if (transpiled.map) {
-      this.contents = transpiled.code
-      this.sourceMap = transpiled.map.toJSON()
+      this.contents = transpiled.code;
+      sourceMap = transpiled.map.toJSON();
     } else {
-      this.contents = transpiled
+      this.contents = transpiled;
     }
-    return super.parse(this.contents)
+
+    let parts = [
+      {
+        type: 'js',
+        value: this.contents,
+        sourceMap: sourceMap,
+      }
+    ];
+
+    return parts;
   }
 }
+
+module.exports = LiveScriptAsset;

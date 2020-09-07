@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-livescript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "LiveScript support for Parcel bundler",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ukoloff/parcel-plugin-livescript.git"
+    "url": "git+https://github.com/c0deaddict/parcel-plugin-livescript.git"
   },
   "keywords": [
     "livescript",
@@ -19,20 +19,20 @@
     "*.js"
   ],
   "engines": {
-    "node": ">=7"
+    "node": ">=8"
   },
   "author": {
-    "name": "Stas Ukolov",
-    "email": "ukoloff@gmail.com",
-    "url": "https://github.com/ukoloff"
+    "name": "Jos van Bakel",
+    "email": "jos@codeaddict.org",
+    "url": "https://github.com/c0deaddict"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ukoloff/parcel-plugin-livescript/issues"
+    "url": "https://github.com/c0deaddict/parcel-plugin-livescript/issues"
   },
-  "homepage": "https://github.com/ukoloff/parcel-plugin-livescript",
+  "homepage": "https://github.com/c0deaddict/parcel-plugin-livescript",
   "dependencies": {
-    "livescript": "^1.5.0",
-    "parcel-bundler": "^1.6.1"
+    "livescript": "^1.6.0",
+    "parcel-bundler": "^1.11.0"
   }
 }

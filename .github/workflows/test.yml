@@ -1,0 +1,27 @@
+name: test
+
+on:
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+
+      - name: Install packages
+        run:  npm install
+
+      - name: Install self as package
+        working-directory: test/bundle
+        run:  npm install
+
+      - name: Run test
+        working-directory: test
+        run:  npm test

@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/c0deaddict/parcel-plugin-livescript.svg?branch=master)](https://travis-ci.org/c0deaddict/parcel-plugin-livescript)
 [![Build status](https://ci.appveyor.com/api/projects/status/mt0t05o28mn02mcb?svg=true)](https://ci.appveyor.com/project/c0deaddict/parcel-plugin-livescript)
+![test](https://github.com/ukoloff/parcel-plugin-livescript/workflows/test/badge.svg)
 [![npm version](https://badge.fury.io/js/parcel-plugin-livescript.svg)](https://badge.fury.io/js/parcel-plugin-livescript)
 
 LiveScript support for Parcel bundler

@@ -1,0 +1,54 @@
+name: test
+
+on:
+  - push
+
+jobs:
+  before:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - run: echo "not contains '[skip ci]'"
+
+  test:
+    needs: before
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macOS-latest
+          - windows-latest
+        node-version:
+          - 10.x
+          - 12.x
+          - 13.x
+          - 14.x
+
+    steps:
+
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ matrix.os }}-${{ matrix.node-version }}
+
+      - name: Install packages
+        run:  npm install
+
+      - name: Install self as package
+        working-directory: test/bundle
+        run:  npm install
+
+      - name: Run test
+        working-directory: test
+        run:  npm test

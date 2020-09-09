@@ -1,38 +1,40 @@
 {
-  "name": "parcel-plugin-livescript",
-  "version": "1.1.0",
+  "name": "parcel-transformer-livescript",
+  "version": "2.0.0-beta-1",
   "description": "LiveScript support for Parcel bundler",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/c0deaddict/parcel-plugin-livescript.git"
-  },
+  "license": "ISC",
   "keywords": [
+    "parcel",
     "livescript",
     "javascript",
-    "transpiler"
-  ],
-  "files": [
-    "*.js"
+    "transformer"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=8",
+    "parcel": "2.x"
   },
+  "homepage": "https://github.com/c0deaddict/parcel-plugin-livescript",
   "author": {
     "name": "Jos van Bakel",
     "email": "jos@codeaddict.org",
     "url": "https://github.com/c0deaddict"
   },
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0deaddict/parcel-plugin-livescript.git"
+  },
   "bugs": {
     "url": "https://github.com/c0deaddict/parcel-plugin-livescript/issues"
   },
-  "homepage": "https://github.com/c0deaddict/parcel-plugin-livescript",
-  "dependencies": {
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "files": [
+    "*.js"
+  ],
+  "devDependencies": {
     "livescript": "^1.6.0",
-    "parcel-bundler": "^1.11.0"
+    "parcel": "^2.0.0-beta.1"
   }
 }

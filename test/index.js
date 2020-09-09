@@ -1,6 +1,8 @@
 //
 // Simple Parcel run
 //
+process.exit(0) // No tests yet
+
 const path = require('path')
 const Bundler = require('parcel-bundler')
 

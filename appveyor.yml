@@ -5,10 +5,11 @@ cache:
 
 environment:
   matrix:
+    - NOV: 14
+    - NOV: 13
+    - NOV: 12
     - NOV: 11
     - NOV: 10
-    - NOV: 9
-    - NOV: 8
 
 platform:
   - x64

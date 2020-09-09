@@ -10,7 +10,7 @@
     "transformer"
   ],
   "engines": {
-    "node": ">=8",
+    "node": ">=10",
     "parcel": "2.x"
   },
   "homepage": "https://github.com/c0deaddict/parcel-plugin-livescript",
